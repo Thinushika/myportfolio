@@ -3,8 +3,6 @@ import styles from '@/styles/Home.module.css'
 import { useEffect, useState } from 'react';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import { FaPhoneAlt } from "react-icons/fa";
-import GetHelpButton from '@/components/buttons/getHelpButton';
-import ExchangeRates from '@/components/buttons/ExchangeRates';
 import Link from 'next/link';
 import { Project } from 'typings';
 import { fetchRates } from '../utils/fetchRates'
