@@ -1,0 +1,184 @@
+.main {
+  min-height: 100vh;
+}
+.navbarStyles{
+  background-color: transparent !important;
+  position: absolute !important;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+.navbarStyles a{
+  color: var(--color-light-green) !important;
+}
+
+
+.homeSliderWrapper{
+  height: 100vh;
+  /* background-image: linear-gradient(to right,rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("/imgs/hero1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+
+
+/* footer */
+.footerStyles{
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+}
+.footerIconWrapper{
+  height: 34px !important;
+  width: 34px !important;
+  text-align: center;
+  transition: background-color 0.5s ease-in-out;
+  border-radius: 100%;
+}
+
+.footerIconWrapper a{
+  color: var(--color-light-green) !important;
+  font-size: 20px;
+  line-height: 20px;
+}
+.footerIconWrapper:hover{
+  background-color: var(--color-dark-gray);
+}
+
+
+
+.heroTitle1{
+  color: var(--color-light-gray);
+  font-size: 50px;
+  font-weight: 900;
+}
+.heroTitle2{
+  color: var(--color-light-gray);
+  font-size: 50px;
+  font-weight: 900;
+}
+.heroTitle2 span{
+  color: var(--color-light-green);
+  font-size: 50px;
+}
+.heroTitle3{
+  font-weight: 900;
+  color: var(--color-light-gray);
+  font-size: 50px;
+}
+.heroPara{
+  color: var(--color-light-gray);
+  font-size: 16px;
+  font-weight: 500;
+}
+.primaryButton{
+  text-decoration: none;
+  background-color: transparent;
+  border: solid 1px var(--color-light-green);
+  color: var(--color-light-green);
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+.backgroundAnimation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.verticalLine {
+  position: absolute;
+  width: 1px; 
+  height: 100%;
+  background-color: #333; 
+}
+
+.dot1 {
+  position: absolute;
+  width: 8px;
+  height: 16px;
+  background-color: #333; 
+  border-radius: 50%;
+  margin-left: -4px;
+  animation: dotAnimation1 4s infinite alternate;
+}
+.dot2{
+  position: absolute;
+  width: 8px;
+  height: 16px;
+  background-color: #464646; 
+  border-radius: 50%;
+  margin-left: -4px;
+  animation: dotAnimation2 5s infinite alternate;
+}
+.dot3 {
+  position: absolute;
+  width: 8px;
+  height: 16px;
+  background-color: #535353; 
+  border-radius: 50%;
+  margin-left: -4px;
+  animation: dotAnimation3 6s infinite alternate;
+}
+
+@keyframes dotAnimation1 {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 100%;
+  }
+}
+@keyframes dotAnimation2{
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 100%;
+  }
+}
+@keyframes dotAnimation3 {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 100%;
+  }
+}
+
+.verticalLine:nth-child(1) {
+  left: 20%;
+}
+
+.verticalLine:nth-child(2) {
+  left: 25%;
+}
+
+.verticalLine:nth-child(3) {
+  left: 30%;
+}
+
+.dot1{
+  left: 20%;
+}
+
+.dot2{
+  left: 25%;
+}
+
+.dot3{
+  left: 30%;
+}
+
+
+
