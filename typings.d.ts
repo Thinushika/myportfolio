@@ -18,6 +18,7 @@ export interface Project extends SanityBody{
     body: Block[];
     projectCategory: Category[];
     mainImage: Image;
+    thumbnail: Image;
     title: string;
     publishedAt: string;
     slug: Slug;

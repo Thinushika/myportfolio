@@ -33,8 +33,8 @@ const Footer = () => {
 
   return (
     <>
-      <div className={`d-flex w-100 flex-column flex-lg-row px-2 px-lg-5 py-2 ${styles.footerStyles}`}>
-        <div className="col-12 col-lg-6 d-flex flex-row">
+      <div className={`d-flex justify-content-center px-2 py-2 ${styles.footerStyles}`}>
+        <div className={`d-flex flex-column ${styles.containerFooter} align-items-center justify-content-center`}>
           {
             socialMedia.map((item)=>{
               return(
@@ -45,7 +45,6 @@ const Footer = () => {
             })
           }
         </div>
-        <div className="col-12 col-lg-6"></div>
       </div>
     </>
   )

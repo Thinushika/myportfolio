@@ -23,19 +23,19 @@ const Projects = ({ projects }: Props) => {
   }, []);
   return (
     <>
-      <div className="d-flex flex-column">
-        <h1>Hi</h1>
+      <div className="d-flex row row-cols-1 row-cols-md-2 row-cols-lg-3 p-5 align-items-center justify-content-center">
         {
-          projects.map((project) => {
+          projects.map((project, index) => {
             return (
-              <>
-                <div className="d-flex flex-column">
-                  <p>{project.title}</p>
-                  <p>{project.name}</p>
-                  <p>{project.categories}</p>
-                  <Image src={`${project.imageUrl}`} alt="" width={200} height={500} />
+              <div className="d-flex mb-4" key={index}>
+                <div className={`d-flex col flex-column position-relative  ${styles.cardWrapper}`} >
+                <Image src={`${project.thumbnail}`} alt="" width={500} height={300} className='img-fluid' />
+                <div className={`d-flex flex-column p-3 ${styles.CardContent} w-100 justify-content-end`}>
+                  <Link href={project.slug.current}>{project.title}</Link>
+                  <p className='mb-0'>{project.categories}</p>
                 </div>
-              </>
+              </div>
+              </div>
             )
           })
         }

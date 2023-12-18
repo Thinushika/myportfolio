@@ -5,7 +5,7 @@ import { Project } from "typings";
 // *[_type == "projects"]`
 
 const query = `
-*[_type == "projects"]{"name": author->name,"categories": projectCategory[]->title, body, publishedAt ,slug,"imageUrl": mainImage.asset->url}
+*[_type == "projects"]{title,"name": author->name,"categories": projectCategory[]->title, body, publishedAt ,slug,"imageUrl": mainImage.asset->url,"thumbnail": thumbnail.asset->url}
 `
 export const fetchRates = async () => {
 
