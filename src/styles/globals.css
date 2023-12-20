@@ -21,6 +21,7 @@
   --font-family-primary: 'Rajdhani', sans-serif;
   --font-family-secondary: 'Montserrat', sans-serif;
 
+  --padding: 100px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -42,9 +43,14 @@
     --font-18: 18px;
     --font-16: 16px;
     --font-14: 14px;
+    --padding: 60px;
   }
 }
-
+@media screen and (max-width: 600px){
+  :root{
+    --padding: 25px;
+  }
+}
 
 @media screen and (min-width: 1920px) {
   .max-width-extra-large{
