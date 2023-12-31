@@ -25,7 +25,7 @@ const Projects = ({ projects }: Props) => {
     <>
     <div className="d-flex flex-column justify-content-center align-items center w-100 p-2 pb-0 pb-lg-5 p-5 py-5 mt-5 text-center">
           <h1 className={`${styles.heroTitle2} mb-0`}><span>Projects</span></h1>
-          <p className={`${styles.heroPara}`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ex beatae <br></br>autem eum veniam quod ea, iste libero velit dolorem?</p>
+          {/* <p className={`${styles.heroPara}`}>See My Works</p> */}
     </div>
       <div className={`d-flex row row-cols-1 row-cols-md-2 row-cols-lg-3 pb-2 py-lg-5 align-items-center justify-content-center ${styles.sideSpacing}`}>
         {
