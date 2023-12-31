@@ -1,19 +1,21 @@
 .main {
   min-height: 100vh;
 }
-.navbarStyles{
+
+.navbarStyles {
   background-color: transparent !important;
   position: absolute !important;
   width: 100%;
   top: 0;
   z-index: 999;
 }
-.navbarStyles a{
+
+.navbarStyles a {
   color: var(--color-light-green) !important;
 }
 
 
-.homeSliderWrapper{
+.homeSliderWrapper {
   height: 100vh;
   /* background-image: linear-gradient(to right,rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("/imgs/hero1.jpg");
   background-position: center;
@@ -24,16 +26,18 @@
 
 
 /* footer */
-.footerStyles{
+.footerStyles {
   position: fixed;
   height: 100vh;
   top: 0;
   z-index: 999;
 }
-.containerFooter{
+
+.containerFooter {
   height: 100%;
 }
-.footerIconWrapper{
+
+.footerIconWrapper {
   height: 34px !important;
   width: 34px !important;
   text-align: center;
@@ -41,42 +45,48 @@
   border-radius: 100%;
 }
 
-.footerIconWrapper a{
+.footerIconWrapper a {
   color: var(--color-light-green) !important;
   font-size: 20px;
   line-height: 20px;
 }
-.footerIconWrapper:hover{
+
+.footerIconWrapper:hover {
   background-color: var(--color-dark-gray);
 }
 
 
 
-.heroTitle1{
+.heroTitle1 {
   color: var(--color-light-gray);
   font-size: 60px;
   font-weight: 900;
 }
-.heroTitle2{
+
+.heroTitle2 {
   color: var(--color-light-gray);
   font-size: 60px;
   font-weight: 900;
 }
-.heroTitle2 span{
+
+.heroTitle2 span {
   color: var(--color-light-green);
   font-size: 60px;
 }
-.heroTitle3{
+
+.heroTitle3 {
   font-weight: 900;
   color: var(--color-light-gray);
   font-size: 60px;
 }
-.heroPara{
-  color: var(--color-light-gray);
+
+.heroPara {
+  color: var(--color-ash);
   font-size: 16px;
   font-weight: 500;
 }
-.primaryButton{
+
+.primaryButton {
   text-decoration: none;
   background-color: transparent;
   border: solid 1px var(--color-light-green);
@@ -85,7 +95,7 @@
   transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 
-.primaryButton:hover{
+.primaryButton:hover {
   background-color: var(--color-light-green);
   color: var(--color-dark-gray);
 }
@@ -106,59 +116,72 @@
 
 .verticalLine {
   position: absolute;
-  width: 1px; 
+  width: 1px;
   height: 100%;
-  background-color: #333; 
+  background-color: #333;
 }
 
 .dot1 {
   position: absolute;
   width: 8px;
   height: 16px;
-  background-color: #333; 
+  background-color: #333;
   border-radius: 50%;
   margin-left: -4px;
   animation: dotAnimation1 4s infinite alternate;
 }
-.dot2{
+
+.dot2 {
   position: absolute;
   width: 8px;
   height: 16px;
-  background-color: #464646; 
+  background-color: #464646;
   border-radius: 50%;
   margin-left: -4px;
   animation: dotAnimation2 5s infinite alternate;
 }
+
 .dot3 {
   position: absolute;
   width: 8px;
   height: 16px;
-  background-color: #535353; 
+  background-color: #535353;
   border-radius: 50%;
   margin-left: -4px;
   animation: dotAnimation3 6s infinite alternate;
 }
 
 @keyframes dotAnimation1 {
-  0%, 100% {
+
+  0%,
+  100% {
     top: 0;
   }
+
   50% {
     top: 100%;
   }
 }
-@keyframes dotAnimation2{
-  0%, 100% {
+
+@keyframes dotAnimation2 {
+
+  0%,
+  100% {
     bottom: 0;
   }
+
   50% {
     bottom: 100%;
   }
 }
+
 @keyframes dotAnimation3 {
-  0%, 100% {
+
+  0%,
+  100% {
     top: 0;
   }
+
   50% {
     top: 100%;
   }
@@ -176,15 +199,15 @@
   left: 30%;
 }
 
-.dot1{
+.dot1 {
   left: 20%;
 }
 
-.dot2{
+.dot2 {
   left: 25%;
 }
 
-.dot3{
+.dot3 {
   left: 30%;
 }
 
@@ -196,17 +219,93 @@
 
 
 
-.cardWrapper img{
+.cardWrapper img {
   width: 100%;
   height: auto;
   border-radius: 5px;
   transition: transform 0.3s ease-in;
 }
-.cardWrapper img:hover{
+
+.cardWrapper img:hover {
   cursor: zoom-in;
- transform: scale(1.05);
+  transform: scale(1.05);
 }
-.sideSpacing{
+
+.sideSpacing {
   padding-left: var(--padding);
   padding-right: var(--padding);
+}
+
+
+.slideWrapper {
+  min-height: 50vh;
+}
+.slideWrapperLight{
+  min-height: 50vh;
+  background-color: var(--color-ash);
+}
+.SideAnimation{
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.AnimatedTitle {
+  margin: 0;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  font-weight: 600;
+  font-size: var(--font-30);
+  display: inline-block;
+  vertical-align: top;
+  width: max-content;
+}
+
+.AnimatedTitle::after {
+  content: "";
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: var(--color-light-green);
+  position: absolute;
+  top: -8px;
+  left: -15px;
+  z-index: -1;
+  animation: slide-both-side 4s infinite both;
+}
+
+@keyframes slide-both-side {
+  0% {
+    transform: translateY(-5px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+
+.experienceTime{
+  font-size: var(--font-16);
+}
+.experiencePosition{
+  font-size: var(--font-22);
+  color: var(--color-light-green);
+  font-weight: 600;
+}
+.experienceLocation{
+  font-size: var(--font-18);
+  color: var(--color-ash);
+  font-weight: 600;
+}
+.experienceDetails{
+  font-size: var(--font-14);
+  color: var(--color-ash);
+  font-weight: 400;
 }

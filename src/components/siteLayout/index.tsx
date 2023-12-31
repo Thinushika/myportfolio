@@ -3,6 +3,7 @@ import React, { ReactNode } from 'react'
 import styles from '@/styles/Home.module.css'
 import Header from './Header';
 import Footer from './Footer';
+import SideAnimation from '../buttons/SideAnimation';
 
 
 interface LayoutProps {
@@ -20,6 +21,7 @@ const Layout = ({ children }: LayoutProps) => {
             </Head>
             <main className={styles.main}>
                 <Header />
+                <SideAnimation />
                 {children}
                 <Footer />
             </main>
