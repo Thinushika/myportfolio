@@ -32,7 +32,7 @@ export default function Home({ projects }: Props) {
           <h2 className={`${styles.heroTitle1} mb-0`}>Hello,</h2>
           <h1 className={`${styles.heroTitle2} mb-0`}>I am <span>Thinushika</span>,</h1>
           <h1 className={`${styles.heroTitle3} mb-0`}>Full-Stack Developer</h1>
-          <p className={`${styles.heroPara}`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ex beatae <br></br>autem eum veniam quod ea, iste libero velit dolorem?</p>
+          <p className={`${styles.heroPara}`}>I&apos;m a dynamic Full Stack Developer with two years of experience, proficient in Next.js, React, Node.js, and SQL.</p>
           <PrimaryButton title="See my Works" link="/projects" />
         </div>
       </div>
