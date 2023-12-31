@@ -117,6 +117,9 @@ h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, span, input, select, option, button, t
   box-shadow: none !important;
 }
 
-
+.logoImages{
+  width: 120px !important;
+  height: auto !important;
+}
 
 

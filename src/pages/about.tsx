@@ -15,6 +15,8 @@ import AnimatedTitle from '@/components/tempComponents/AnimatedTitle';
 import ParagraphDesign from '@/components/tempComponents/ParagraphDesign';
 import TimelineItem from '@/components/tempComponents/TimelineListItem';
 import EducationItem from '@/components/tempComponents/EducationItem';
+import Image from 'next/image';
+import ImgItem from '@/components/tempComponents/SkillsItem';
 
 const About = () => {
 
@@ -60,7 +62,19 @@ const About = () => {
 
                     <div className="d-flex flex-column py-5">
                         <AnimatedTitle title="Skills" />
-                        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+                        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5">
+                            <ImgItem imageUrl="/TechLogos/Next.js.png"/>
+                            <ImgItem imageUrl="/TechLogos/React.png" />
+                            <ImgItem imageUrl="/TechLogos/Node.js.png" />
+                            <ImgItem imageUrl="/TechLogos/Express.png" />
+                            <ImgItem imageUrl="/TechLogos/MongoDB.png" />
+                            <ImgItem imageUrl="/TechLogos/React Bootstrap.png" />
+                            <ImgItem imageUrl="/TechLogos/JavaScript.png" />
+                            <ImgItem imageUrl="/TechLogos/HTML5.png" />
+                            <ImgItem imageUrl="/TechLogos/CSS3.png" />
+                            <ImgItem imageUrl="/TechLogos/Sanity.png" />
+                            <ImgItem imageUrl="/TechLogos/MySQL.png" />
+                            <ImgItem imageUrl="/TechLogos/WordPress.png" />
                         </div>
                     </div>
 
