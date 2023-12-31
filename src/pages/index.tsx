@@ -4,7 +4,7 @@ import { fetchRates } from '../utils/fetchRates'
 import { GetStaticProps } from 'next';
 import { register } from 'swiper/element/bundle';
 import styles from "@/styles/Home.module.css";
-import PrimaryButton from "@/components/buttons/PrimaryButton";
+import PrimaryButton from "@/components/tempComponents/PrimaryButton";
 
 
 register();

@@ -11,10 +11,10 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/effect-fade';
-import AnimatedTitle from '@/components/buttons/AnimatedTitle';
-import ParagraphDesign from '@/components/buttons/ParagraphDesign';
-import TimelineItem from '@/components/buttons/TimelineListItem';
-import EducationItem from '@/components/buttons/EducationItem';
+import AnimatedTitle from '@/components/tempComponents/AnimatedTitle';
+import ParagraphDesign from '@/components/tempComponents/ParagraphDesign';
+import TimelineItem from '@/components/tempComponents/TimelineListItem';
+import EducationItem from '@/components/tempComponents/EducationItem';
 
 const About = () => {
 

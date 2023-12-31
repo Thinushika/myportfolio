@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react'
 import styles from '@/styles/Home.module.css'
 import Header from './Header';
 import Footer from './Footer';
-import SideAnimation from '../buttons/SideAnimation';
+import SideAnimation from '../tempComponents/SideAnimation';
 
 
 interface LayoutProps {
