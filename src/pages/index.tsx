@@ -35,12 +35,7 @@ export default function Home({ projects }: Props) {
           <p className={`${styles.heroPara}`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ex beatae <br></br>autem eum veniam quod ea, iste libero velit dolorem?</p>
           <PrimaryButton title="See my Works" link="/projects" />
         </div>
-
       </div>
-
-      {/* Skills */}
-
-      {/* experience */}
     </>
   )
 }
