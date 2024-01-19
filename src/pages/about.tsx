@@ -32,7 +32,7 @@ const About = () => {
                 </div>
                 <div className="d-flex flex-column col-12 col-lg-8 py-2 py-lg-5">
                     <div className="d-flex flex-column py-5">
-                        <AnimatedTitle title="About Me" />s
+                        <AnimatedTitle title="About Me" />
                         <ParagraphDesign desc="I'm a Experienced Software Engineer with over three years of expertise, proficient in Next.js, React.js, Sanity CMS,  and SQL. From a curiosity that turned into commitment, I specialize in crafting robust web applications by seamlessly integrating front-end and back-end technologies. Fueled by a passion for innovation, I maintain a successful track record in project delivery. Committed to continuous learning, I engage in challenges and open-source contributions. Eager to bring my skills and enthusiasm to a collaborative team, I'm ready to contribute to the future of development." />
                     </div>
 
