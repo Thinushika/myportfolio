@@ -52,6 +52,12 @@ const Projects = ({ projects }: Props) => {
           Next.js
         </button>
         <button
+          onClick={() => setSelectedCategory('OpenAI')}
+          className={`${selectedCategory === 'OpenAI' ? 'activeCategory' : ''} categoryButton talkButtonSize me-2 ${styles.primaryButton} px-4 py-2`}
+        >
+          OpenAI
+        </button>
+        <button
           onClick={() => setSelectedCategory('Html')}
           className={`${selectedCategory === 'Html' ? 'activeCategory' : ''} categoryButton talkButtonSize ${styles.primaryButton} px-4 py-2`}
         >
