@@ -64,7 +64,8 @@ const Projects = ({ projects }: Props) => {
             return ( 
               <div className="d-flex mb-4" key={index}>
                 <div className={`d-flex col flex-column position-relative  ${styles.cardWrapper}`} >
-                <Link href={project.slug.current}>
+                {/* href={project.slug.current} */}
+                <Link href="#">
                   <Image src={`${project.thumbnail}`} alt="" width={500} height={300} className='img-fluid' />
                 </Link>
               </div>

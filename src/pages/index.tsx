@@ -31,8 +31,8 @@ export default function Home({ projects }: Props) {
         <div className="col-12 col-lg-8">
           <h2 className={`${styles.heroTitle1} mb-0`}>Hello,</h2>
           <h1 className={`${styles.heroTitle2} mb-0`}>I am <span>Thinushika</span>,</h1>
-          <h1 className={`${styles.heroTitle3} mb-0`}>Full-Stack Developer</h1>
-          <p className={`${styles.heroPara}`}>I&apos;m a dynamic Full Stack Developer with two years of experience, proficient in Next.js, React, Node.js, and SQL.</p>
+          <h1 className={`${styles.heroTitle3} mb-0`}>Software Engineer</h1>
+          <p className={`${styles.heroPara}`}>I&apos;m a Software Engineer with two years of experience, proficient in Next.js, React, Node.js, and SQL.</p>
           <PrimaryButton title="See my Works" link="/projects" />
         </div>
       </div>
